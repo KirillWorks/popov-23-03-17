@@ -233,7 +233,7 @@ nav a:hover{
     height:100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: cover;    
 }
 
 /******************************
@@ -334,7 +334,7 @@ main{
 }
 
 .box-info {
-    width: 558px;
+    max-width: 558px;
     background-color: #fff;
     padding: 50px 80px;
     position: relative;
@@ -371,6 +371,10 @@ main{
     color: #d9d9d9;
 }
 
+.menu{
+ position: relative;   
+}
+
 .menu-head{
     text-align: center;
 }
@@ -388,6 +392,40 @@ main{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+}
+
+.NextArrow.slick-arrow {
+    position: absolute;
+    width: 33%;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.PrevArrow.slick-arrow {
+    position: absolute;
+    width: 33%;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.menu-slider-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+}
+
+.menu-slider-block{
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    bottom: -100px;
 }
 
 .download {
@@ -417,6 +455,13 @@ main{
     text-transform: uppercase;
 }
 
+.download-item span{
+    cursor: pointer;
+}
+
+.download-item span:hover{
+    text-decoration: underline;
+}
 
 .developments{
     text-align: center;
@@ -436,6 +481,263 @@ main{
     vertical-align: top;
 }
 
+.developments-banner-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .developments-banner-item p{
-    margin-top: 40px;
+    font-family: "LatoItalic";
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.developments-banner-item h3{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/******************************
+            FOOTER
+******************************/
+
+footer{
+    background-color: #000;
+    color: #ddd;
+    font-family: 'LatoRegular';  
+    margin-top: 150px;    
+    padding: 85px 100px 100px 100px;
+}
+
+.footer-logo{
+    float: left;
+    width: 200px;
+}
+
+.footer-logo p{
+    font-family: 'TTDrugsThin';
+    color: #FFF;
+    font-size: 45px;
+    text-transform: uppercase;
+    position: relative;
+    top: -14px;
+}
+
+.footer-logo p span{
+    font-family: 'TenorSans';
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer-item {
+   display: inline-block;
+    vertical-align: top;
+}
+
+.footer-item ul{
+    list-style: none;
+}
+
+.footer-item ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-item ul a{
+    color: #ddd;
+}
+
+.footer-item ul a:hover{
+    color: #fff;
+}
+
+address span{
+    display: block;
+}
+
+.footer-social{
+    margin-bottom: 60px;
+}
+
+.footer-social a:not(:last-child){
+    margin-right: 50px;
+}
+
+.footer-social .vk{
+     width: 40px;
+    height: 27px;
+    background-position: -5px -6px;
+}
+
+.footer-social .inst{
+     width: 40px;
+    height: 27px;
+    background-position: -91px -6px;
+}
+
+.footer-social .f{
+     width: 40px;
+    height: 27px;
+    background-position: -167px -6px;
+}
+
+.tel{
+    margin-bottom: 70px;
+}
+
+.tel p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tel span{
+    font-size: 18px;
+}
+
+.reservation{
+    margin-bottom: 50px;
+}
+
+.btn-review{        
+    border-radius: 0;    
+    padding: 11px 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    border: 1px solid #fff;    
+    color: #fff;
+    cursor: pointer;
+} 
+
+.btn-review:hover{        
+    text-decoration: none;
+    font-size: 22px;
+    border: 1px solid #fff;    
+    color: #fff;   
+} 
+
+/*------------------------------------*\
+02
+    НАВИГАЦИЯ
+03
+\*------------------------------------*/
+#nav{
+    float:left;
+    width:100%;
+    list-style:none;    
+    margin-bottom:10px;
+    padding-left: 0;
+}
+
+#nav p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#nav li span{
+       padding: 0 68px; 
+}
+
+#nav li{
+    float:left;
+    margin-right:10px;
+    position:relative;
+    display:block;
+    border-bottom: 1px dotted #fff;
+}
+
+#nav li ul{
+    padding-left: 0;
+}
+
+#nav .hideList{
+    margin: 0; 
+    text-align: center;
+}
+
+#nav li a{
+    display:block;    
+    color:#fff;
+    background:#333;
+    text-decoration:none;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
+    padding: 5px 91px;
+
+}
+
+#nav li a:hover{
+    color:#fff;    
+    text-decoration:underline;
+}
+
+ 
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+
+#nav ul{
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+    opacity:0; /* Устанавливаем начальное состояние прозрачности */
+    -webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+}
+
+#nav ul li{    
+    float:none;    
+}
+
+#nav ul a{
+    white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    display:block;
+
+}
+
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+    left:0; /* Приносим его обратно на экран, когда нужно */
+    opacity:1; /* Делаем непрозрачным */
+
+}
+
+#nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */   
+    text-decoration:underline;
+
+}
+
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+    text-decoration:none;
+    -webkit-transition:-webkit-transform 0.075s linear;
+}
+
+#nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+    background:#333;
+    background:rgba(51,51,51,0.75); /* Будет полупрозрачным */
+    text-decoration:underline;
+    -moz-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    
 }

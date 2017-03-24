@@ -8,6 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>    
@@ -46,7 +47,7 @@
             </div>
         </div>
         <div class="logo-MammaMia">
-            <img src="img/MammaMia.jpg" alt="Mamma Mia" width="536" height="175">
+            <img src="img/MammaMia.jpg" alt="Mamma Mia" width="536" height="175"  class="img-responsive">
         </div>
         </div>
         <div class="head-slider">
@@ -111,32 +112,39 @@
                 <p>Красочные фотографии популярных позиций меню, которые вы можете попробовать, оказавшись у нас в гостях</p>
             </div>
             <div class="menu-slider">
-              <div style="background-image:url('img/menu-slider1.jpg')"></div>
-              <div style="background-image:url('img/menu-slider3.jpg')"></div>
-              <div style="background-image:url('img/menu-slider2.jpg')"></div>
-              <div style="background-image:url('img/menu-slider2.jpg')"></div>
-              <div style="background-image:url('img/menu-slider2.jpg')"></div>
-              <div style="background-image:url('img/menu-slider2.jpg')"></div>
+              <div id="1" style="background-image:url('img/menu-slider1.jpg')"></div>
+              <div id="2" style="background-image:url('img/menu-slider3.jpg')"></div>
+              <div id="3" style="background-image:url('img/menu-slider2.jpg')"></div>
+              <div id="4" style="background-image:url('img/menu-slider2.jpg')"></div>
+              <div id="5" style="background-image:url('img/menu-slider2.jpg')"></div>
+              <div id="6" style="background-image:url('img/menu-slider2.jpg')"></div>
             </div>
+                <p id="1t" class="menu-slider-text">Красивое название замечательного блюда</p>
+                <p id="2t" class="menu-slider-text">Красивое название замечательного блюда2</p>
+                <p id="3t" class="menu-slider-text">Красивое название замечательного блюда3</p>
+                <p id="4t" class="menu-slider-text">Красивое название замечательного блюда4</p>
+                <p id="5t" class="menu-slider-text">Красивое название замечательного блюда5</p>
+                <p id="6t" class="menu-slider-text">Красивое название замечательного блюда6</p>
+            <div class="menu-slider-block"></div>
         </section>        
         <section class="download">
             <div class="download-item">
-                <spam class="sprite-book sprite2"></spam>
+                <i class="sprite-book sprite2"></i>
                 <p>Бизнес-ланч</p>
                 <span>загрузить PDF</span>
             </div>
             <div class="download-item">
-                <spam class="sprite-book sprite2"></spam>
+                <i class="sprite-book sprite2"></i>
                 <p>Винная карта</p>
                 <span>загрузить PDF</span>
             </div>
             <div class="download-item">
-                <spam class="sprite-book sprite2"></spam>
+                <i class="sprite-book sprite2"></i>
                 <p>Основное меню</p>
                 <span>загрузить PDF</span>
             </div>
             <div class="download-item">
-                <spam class="sprite-book sprite2"></spam>
+                <i class="sprite-book sprite2"></i>
                 <p>постное меню</p>
                 <span>загрузить PDF</span>
             </div>
@@ -148,17 +156,17 @@
             </div>
             <div class="developments-banner">
                 <div class="developments-banner-item">
-                    <img src="img/banner.jpg" alt="" width="354" height="500">
+                    <img src="img/banner.jpg" alt="" width="354" height="500"  class="img-responsive">
                     <p>Дата и время проведения</p>
                     <h3>Название мероприятия</h3>
                 </div>
                 <div class="developments-banner-item">
-                    <img src="img/banner2.jpg" alt="" width="354" height="500">
+                    <img src="img/banner2.jpg" alt="" width="354" height="500"  class="img-responsive">
                     <p>Дата и время проведения</p>
                     <h3>Название мероприятия</h3>
                 </div>
                 <div class="developments-banner-item">
-                    <img src="img/banner3.jpg" alt="" width="354" height="500">
+                    <img src="img/banner3.jpg" alt="" width="354" height="500"  class="img-responsive">
                     <p>Дата и время проведения</p>
                     <h3>Название мероприятия</h3>
                 </div>
@@ -166,7 +174,14 @@
         </section>
 </main>
         <footer>
-            <div class="footer-logo"></div>
+           <div class="container-fluid">
+           <div class="row">
+           <div class="col-sm-6 col-md-3">
+            <div class="footer-logo">
+                <p>Popov <span>Resto</span> Group</p>
+            </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
             <div class="footer-item">
                 <ul>
                     <li><a href="#">Главная</a></li>
@@ -178,6 +193,8 @@
                     <li><a href="#">Мастер-классы</a></li>
                 </ul>
             </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
             <div class="footer-item">
                 <address>
                     <p>Mamma Mia!</p>
@@ -199,23 +216,39 @@
                     <span>г. Курган, ул. К. Мяготина, 85/1</span>                    
                 </address>
             </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
             <div class="footer-item">
-                <div class="social">
-                    <a href="#" class="vk"></a>
-                    <a href="#" class="inst"></a>
-                    <a href="#" class="f"></a>
+                <div class="footer-social">
+                    <a href="#" class="vk sprite"></a>
+                    <a href="#" class="inst sprite"></a>
+                    <a href="#" class="f sprite"></a>
                 </div>
                 <div class="tel">
                     <p>Горячая линия</p>
                     <span>+7 3522 000 000</span>
                 </div>
-                <div class="reserve">
-                    <p>Забронировать столик</p>
-                </div>
-                <a class="btn btn-review"></a>
+                <div class="reservation clearfix">
+                   <ul id="nav">
+                        <p>Забронировать столик</p>
+                            <li>
+                                <span>выберите ресторан</span>
+                                <ul>
+                                    <li class="hideList"><a href="#">Mamma Mia!</a></li>
+                                    <li class="hideList"><a href="#">Мишель</a></li>
+                                    <li class="hideList"><a href="#">Марани</a></li>
+                                    <li class="hideList"><a href="#">Рекорд</a></li>
+                                </ul>
+                           </li>
+                    </ul>
+                </div>                
+                <a class="btn-review">оставить отзыв</a>
+            </div>
+               </div>
+               </div>
             </div>
         </footer>
-        </div>
+      
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
