@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>yslugi</title>
 
     <!-- Bootstrap -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -24,35 +24,37 @@
   <body>
     
     <header>
-       <div class="container1 clearfix">
+       <div class="navbar-header">
+       <div class="container1 clearfix navbar navbar-default">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
         <div class="logo">
             <p>Popov <span>Resto</span> Group</p>
         </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
         <nav>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Рестораны</a></li>
-                <li><a href="#">Меню</a></li>
-                <li><a href="#" class="active">События</a></li>
-                <li><a href="#">Фото</a></li>
-                <li><a href="#" class="bold"><span class="icon sprite2"></span>3D тур</a></li>                
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Рестораны</a></li>                
+                <li><a href="#">События</a></li>
+                <li><a href="#">Услуги</a></li>                                 
             </ul>
         </nav>
         <div class="header-item">
-            <a class="btn btn-delivery">Доставка</a>
-            <div class="social">
-                <a href="#" class="vk sprite"></a>
-                <a href="#" class="inst sprite"></a>
-                <a href="#" class="f sprite"></a>
-            </div>
-        </div> 
+            <a class="btn btn-head-review">оставить отзыв</a>            
+        </div>        
         </div>             
     </header>
     <main>
        <section class="main-head">
-          <span>Вернуться</span>
-           <h2>Название мероприятия</h2>
-           <p>Дата и время проведения</p>
+          <h3 class="center under-line">Наши Услуги</h3>
+           <p>Ознакомьтесь с грядущими событиями наших ресторанов: концертами, творческими встречами, мастер-классами или тематическими вечерами</p>
        </section>
        <section class="services">
           <div class="services-item">
@@ -189,7 +191,7 @@
                    <ul id="nav">
                         <p>Забронировать столик</p>
                             <li>
-                                <span>выберите ресторан</span>
+                                <span>выберите ресторан</span><span class="nav-down"></span>
                                 <ul>
                                     <li class="hideList"><a href="#">Mamma Mia!</a></li>
                                     <li class="hideList"><a href="#">Мишель</a></li>

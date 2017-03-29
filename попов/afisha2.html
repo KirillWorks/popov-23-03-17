@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>afisha2</title>
 
     <!-- Bootstrap -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -24,33 +24,36 @@
   <body>
     
     <header>
-       <div class="container1 clearfix">
+       <div class="navbar-header">
+       <div class="container1 clearfix navbar navbar-default">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
         <div class="logo">
             <p>Popov <span>Resto</span> Group</p>
         </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
         <nav>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Рестораны</a></li>
-                <li><a href="#">Меню</a></li>
-                <li><a href="#" class="active">События</a></li>
-                <li><a href="#">Фото</a></li>
-                <li><a href="#" class="bold"><span class="icon sprite2"></span>3D тур</a></li>                
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Рестораны</a></li>                
+                <li><a href="#">События</a></li>
+                <li><a href="#">Услуги</a></li>                                 
             </ul>
         </nav>
         <div class="header-item">
-            <a class="btn btn-delivery">Доставка</a>
-            <div class="social">
-                <a href="#" class="vk sprite"></a>
-                <a href="#" class="inst sprite"></a>
-                <a href="#" class="f sprite"></a>
-            </div>
-        </div> 
-        </div>             
+            <a class="btn btn-head-review">оставить отзыв</a>            
+        </div>        
+        </div>              
     </header>
     <main class="afisha">
        <section class="main-head">
-           <h2>События</h2>
+           <h3 class="center under-line">События</h3>
            <p>Ознакомьтесь с грядущими событиями наших ресторанов: концертами, творческими встречами, мастер-классами или тематическими вечерами</p>
        </section>
        <div class="container-fluid">
@@ -76,30 +79,39 @@
             </div>
             <div class="col-md-10">
                 <div class="row">
+                   <div class="next-event">
+                       <span>Следующее событие</span>                       
+                   </div>
                     <div class="col-md-5">
                        <div class="event-img">
                         <img src="img/banner2.jpg" alt="" width="555" height="780"  class="img-responsive">
+                        </div>
+                        <div class="previous-events">
+                            <span>Предыдущие событие</span>
                         </div>                        
                     </div>
                     <div class="col-md-7">
                         <div class="event-text">
                             <h3>Название мероприятия</h3>
                             <p>Дата и время проведения</p>
-                            <span></span>
+                            <div class="like-box">
+                                <span class="like-img"></span>
+                                <span class="like">14</span>
+                            </div>
                             <p>Ознакомьтесь с грядущими событиями наших ресторанов: концертами, творческими встречами, мастер-классами или тематическими вечерами.</p>
                             <p>Любой текст, относящийся к мероприятию, событию, новости, акции, концерту, мастер-классу, фото-отчету и так далее.</p>
                             <a href="#" class="btn-photo">Фото-отчет</a>
                             <div class="social">
                                <span>Рассказать друзьям:</span>
-                                <a href="#" class="vk sprite"></a>
-                                <a href="#" class="inst sprite"></a>
-                                <a href="#" class="f sprite"></a>
+                                <a href="#" class="vk2 sprite3"></a>
+                                <a href="#" class="inst2 sprite3"></a>
+                                <a href="#" class="f2 sprite3"></a>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="row">
-                   <div class="event-img">
+                   <div class="event-img-small">
                     <article class="developments-banner-item">
                     <img src="img/banner.jpg" alt="" width="360" height="500"  class="img-responsive">
                     <p>Дата и время проведения</p>
@@ -116,7 +128,7 @@
                     <h3>Название мероприятия</h3>
                 </article>
                 </div>
-                </div>
+                </div>                
             </div>
         </div>
         </div>
@@ -180,7 +192,7 @@
                    <ul id="nav">
                         <p>Забронировать столик</p>
                             <li>
-                                <span>выберите ресторан</span>
+                                <span>выберите ресторан</span><span class="nav-down"></span>
                                 <ul>
                                     <li class="hideList"><a href="#">Mamma Mia!</a></li>
                                     <li class="hideList"><a href="#">Мишель</a></li>
